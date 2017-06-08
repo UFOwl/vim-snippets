@@ -1,0 +1,107 @@
+snippet ptarr
+	PropTypes.array
+snippet ptbool
+	PropTypes.bool
+snippet ptfunc
+	PropTypes.func
+snippet ptnum
+	PropTypes.number
+snippet ptobj
+	PropTypes.object
+snippet ptstr
+	PropTypes.string
+snippet ptsym
+	PropTypes.symbol
+snippet ptnode
+	PropTypes.node
+snippet ptelem
+	PropTypes.element
+snippet ptinst
+	PropTypes.instanceOf(${1})${0}
+snippet ptoo
+	PropTypes.oneOf([${1}])${0}
+snippet ptoot
+	PropTypes.oneOfType([
+		${1},${2}
+	])${0}
+snippet ptarro
+	PropTypes.arrayOf(${1})${0}
+snippet ptobjo
+	PropTypes.objectOf(${1})${0}
+snippet ptshape
+	PropTypes.shape({
+		${1}: ${2},${3}
+	})${0}
+snippet ptany!
+	PropTypes.any.isRequired
+snippet ptarr!
+	PropTypes.array.isRequired
+snippet ptbool!
+	PropTypes.bool.isRequired
+snippet ptfunc!
+	PropTypes.func.isRequired
+snippet ptnum!
+	PropTypes.number.isRequired
+snippet ptobj!
+	PropTypes.object.isRequired
+snippet ptstr!
+	PropTypes.string.isRequired
+snippet ptsym!
+	PropTypes.symbol.isRequired
+snippet ptnode!
+	PropTypes.node.isRequired
+snippet ptelem!
+	PropTypes.element.isRequired
+snippet ptinst!
+	PropTypes.instanceOf(${1}).isRequired${0}
+snippet ptoo!
+	PropTypes.oneOf([${1}]).isRequired${0}
+snippet ptoot!
+	PropTypes.oneOfType([
+		${1},${2}
+	]).isRequired${0}
+snippet ptarro!
+	PropTypes.arrayOf(${1}).isRequired${0}
+snippet ptobjo!
+	PropTypes.objectOf(${1}).isRequired${0}
+snippet ptshape!
+	PropTypes.shape({
+		${1}: ${2},${3}
+	}).isRequired${0}
+snippet bind@
+	this.${1} = this.$1.bind(this);
+snippet <
+	<${1}${2}>${0}</$1>
+snippet cstr
+	constructor(props) {
+		super(props);
+		${0}
+	}
+snippet cwm
+	componentWillMount() {
+		${0}
+	}
+snippet cdm
+	componentDidMount() {
+		${0}
+	}
+snippet cwrp
+	componentWillReceiveProps(${1:nextProps}) {
+		${0}
+	}
+snippet scud
+	shouldComponentUpdate(${1:nextProps, nextState}) {
+		${0}
+	}
+snippet cwud
+	componentWillUpdate(${1:nextProps, nextState}) {
+		${0}
+	}
+snippet cdud
+	componentDidUpdate(${1:prevProps, prevState}) {
+		${0}
+	}
+snippet cwum
+	componentWillUnmount() {
+		${0}
+	}
